@@ -34,7 +34,9 @@ class Cart:
     @property
     def price(self):
         return sum(
-            item.info.price for item in self.items.values() if not item.info.deleted
+            item.info.price * item.quantity
+            for item in self.items.values()
+            if not item.info.deleted
         )
 
     @property
