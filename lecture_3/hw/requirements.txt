@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+prometheus-fastapi-instrumentator
+requests
+grpcio
+grpcio-tools
+websockets
+websocket-client
